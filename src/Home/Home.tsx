@@ -1,3 +1,4 @@
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import logo from "../assets/logo/logo.png";
 
 const Home = () => {
@@ -14,21 +15,33 @@ const Home = () => {
         </div>
 
         {/* Main Content Area */}
-        <div className="flex-grow flex flex-col justify-center items-center z-10 px-4 sm:px-6 lg:px-8">
-          <div className=" text-center">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-4 leading-snug">
-              Coming Soon...
+        <div className="flex-grow flex flex-col justify-center items-center  ">
+          <div className=" text-center py-8 md:py-16">
+            <h2 className="text-5xl md:text-[120px] font-bold uppercase text-gray-800 mb-4 leading-snug">
+              Coming Soon
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+            <p className="  text-lg md:text-[28px] text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed font-bold">
               We’re building Bangladesh’s most customer-loved <br />
-              Gadget & Gift destination.
+              <span className="text-[#E26626] md:text-[32px]"> Gadget & Gift</span>{" "}
+              destination.
             </p>
 
             {/* Countdown */}
+            <div className="h-24 bg-black"></div>
             {/* <Countdown /> */}
           </div>
-
           {/* Social Icons */}
+          <div className="flex flex-row items-center gap-2 md:gap-6 mt-6">
+            <p className="text-black font-semibold text-[28px]">Follow us on</p>
+            <div className="flex items-center gap-4">
+              <div className="bg-[#E26626] p-3 rounded-full text-white hover:scale-105 transition-transform cursor-pointer">
+                <FaFacebook className="text-xl" />
+              </div>
+              <div className="bg-[#E26626] p-3 rounded-full text-white hover:scale-105 transition-transform cursor-pointer">
+                <FaInstagram className="text-xl" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
