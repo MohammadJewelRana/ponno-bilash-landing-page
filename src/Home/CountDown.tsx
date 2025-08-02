@@ -29,9 +29,9 @@ const CountDown = () => {
     formatDigit(value).split("").map((digit, idx) => (
       <div
         key={idx}
-        className="bg-[#BDEDFF] rounded-md w-12 h-16 flex items-center justify-center"
+        className="bg-[#BDEDFF] rounded-md w-15 h-15 flex items-center justify-center"
       >
-        <p className="text-[#E26626] font-bold text-4xl">{digit}</p>
+        <p className="text-[#E26626] font-bold text-5xl">{digit}</p>
       </div>
     ));
 
@@ -43,13 +43,11 @@ const CountDown = () => {
   ];
 
   return (
-    <div className="flex justify-center items-center gap-4 flex-wrap">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 md:gap-6 justify-center items-center px-4 ">
       {timeSections.map((section) => (
-        <div key={section.label} className="px-2 py-2">
-          <div className="flex gap-2">
-            {renderDigits(section.value)}
-          </div>
-          <p className="font-bold uppercase text-xl text-black text-center">
+        <div key={section.label} className="px-2 py-2 flex flex-col items-center  border-1 border-sky-100 rounded-md bg-sky-50">
+          <div className="flex gap-2">{renderDigits(section.value)}</div>
+          <p className="font-bold uppercase text-xl text-black text-center pt-2">
             {section.label}
           </p>
         </div>

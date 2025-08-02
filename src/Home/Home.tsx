@@ -27,8 +27,8 @@ const Home = () => {
             {/* <h2 className="text-5xl md:text-[120px] font-bold uppercase text-gray-800 mb-4 leading-snug">
               Coming Soon
             </h2> */}
-            <p className="px-2  text-lg md:text-[28px] text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed font-bold">
-              We’re building Bangladesh’s most customer-loved <br />
+            <p className="px-2  text-md md:text-[28px] text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed font-bold">
+              We’re building Bangladesh’s most customer loved <br />
               <span className="text-[#E26626] md:text-[32px]">
                 {" "}
                 Gadget & Gift
