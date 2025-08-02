@@ -18,7 +18,7 @@ const Home = () => {
 
         {/* Main Content Area */}
         <div className="flex-grow flex flex-col justify-center items-center  ">
-          <div className=" text-center py-8 md:py-16">
+          <div className=" text-center py-8">
             {/* <h2 className="text-5xl md:text-[120px] font-bold uppercase text-gray-800 mb-4 leading-snug">
               Coming Soon
             </h2> */}
