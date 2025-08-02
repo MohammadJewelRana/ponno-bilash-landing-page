@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import logo from "../assets/logo/logo.png";
+import CountDown from "./CountDown";
 
 const Home = () => {
   return (
@@ -27,8 +28,8 @@ const Home = () => {
             </p>
 
             {/* Countdown */}
-            <div className="h-24 bg-black"></div>
-            {/* <Countdown /> */}
+      
+            <CountDown />
           </div>
           {/* Social Icons */}
           <div className="flex flex-row items-center gap-2 md:gap-6 mt-6">
@@ -46,11 +47,11 @@ const Home = () => {
       </div>
 
       {/* Footer */}
-      <div className="bg-[#E26626] w-full">
+      {/* <div className="bg-[#E26626] w-full">
         <div className="text-center py-3 text-sm text-white">
           © {new Date().getFullYear()}, Ponnobilash.com. All rights reserved.
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
