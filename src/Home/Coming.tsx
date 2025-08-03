@@ -1,4 +1,3 @@
-import React from "react";
 import Lottie from "lottie-react";
 import eyeAnimation from "../assets/lottie/runningMan.json";
 
@@ -12,12 +11,11 @@ const ComingSoon = () => {
           <div className="w-24 md:w-32">
             <Lottie animationData={eyeAnimation} loop={true} />
           </div>
-          {/* <div className="h-4 w-12 bg-black   "></div> */}
         </div>
       </div>
 
       <div>
-        <h2 className="text-6xl md:text-7xl lg:text-[100px] font-extrabold uppercase leading-tight text-gray-800 flex flex-wrap justify-center items-center gap-2 -mt-12 ">
+        <h2 className="text-6xl md:text-7xl lg:text-[100px] font-extrabold uppercase leading-tight text-gray-800 flex flex-wrap justify-center items-center gap-2 -mt-8 md:-mt-8 lg:-mt-11">
           Coming Soon
         </h2>
       </div>

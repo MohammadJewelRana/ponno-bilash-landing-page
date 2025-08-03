@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 // Helper function to format time values as 2-digit strings
 const formatDigit = (value: number): string => value.toString().padStart(2, "0");
 
-// Set your start and end dates here (use exact date strings or timestamps)
 const START_DATE = new Date("2025-08-03T00:00:00").getTime();
-const END_DATE = new Date("2025-08-03T00:00:00").getTime(); // For example, 99 days after start
+const END_DATE = new Date("2025-11-11T00:00:00").getTime(); 
 
 const CountDown = () => {
   const [timeLeft, setTimeLeft] = useState(0);
