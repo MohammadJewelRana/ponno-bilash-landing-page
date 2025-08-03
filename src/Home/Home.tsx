@@ -23,7 +23,7 @@ const Home = () => {
               Coming Soon
             </h2> */}
 
-            <ComingSoon/>
+            <ComingSoon />
             {/* <h2 className="text-5xl md:text-[120px] font-bold uppercase text-gray-800 mb-4 leading-snug">
               Coming Soon
             </h2> */}
@@ -40,16 +40,29 @@ const Home = () => {
 
             <CountDown />
           </div>
+
           {/* Social Icons */}
           <div className="flex flex-row items-center gap-2 md:gap-6 mt-6">
             <p className="text-black font-semibold text-[28px]">Follow us on</p>
             <div className="flex items-center gap-4">
-              <div className="bg-[#E26626] p-3 rounded-full text-white hover:scale-105 transition-transform cursor-pointer">
+              <a
+                href="https://facebook.com/Ponnobilash.official"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#E26626] p-3 rounded-full text-white hover:scale-105 transition-transform cursor-pointer"
+                aria-label="Facebook"
+              >
                 <FaFacebook className="text-xl" />
-              </div>
-              <div className="bg-[#E26626] p-3 rounded-full text-white hover:scale-105 transition-transform cursor-pointer">
+              </a>
+              <a
+                href="https://instagram.com/ponnobilash.official"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#E26626] p-3 rounded-full text-white hover:scale-105 transition-transform cursor-pointer"
+                aria-label="Instagram"
+              >
                 <FaInstagram className="text-xl" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
